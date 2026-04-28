@@ -7,12 +7,14 @@ interface ChatMessage {
 }
 
 interface PhoneMockupProps {
-  messages: ChatMessage[];
+  messages?: ChatMessage[];
   typingMessage?: ReactNode | null;
   showHeader?: boolean;
+  videoSrc?: string;
 }
 
-export const PhoneMockup = ({ messages, typingMessage, showHeader = true }: PhoneMockupProps) => {
+export const PhoneMockup = ({ messages = [], typingMessage, showHeader = true, videoSrc }: PhoneMockupProps) => {
+  const isVideo = Boolean(videoSrc);
   return (
     <div className="relative mx-auto w-[300px] sm:w-[340px]">
       {/* Glow */}
