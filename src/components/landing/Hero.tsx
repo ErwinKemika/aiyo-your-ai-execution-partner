@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, Star, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/I18nContext";
+import { Fragment } from "react";
 import { APP_URL } from "@/lib/constants";
 import { PhoneMockup } from "./PhoneMockup";
 
 export const Hero = () => {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   const heroMessages = [
     { from: "user" as const, text: t("Bantu aku susun rencana hari ini", "Help me plan my day") },
@@ -40,18 +41,19 @@ export const Hero = () => {
             </div>
 
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] mb-6">
-              {t(
-                <>
+              {lang === "id" ? (
+                <Fragment>
                   Teman AI yang
                   <br />
                   <span className="text-gradient-accent">Benar-Benar Kerja</span>
-                </>,
-                <>
+                </Fragment>
+              ) : (
+                <Fragment>
                   The AI That
                   <br />
                   <span className="text-gradient-accent">Actually Gets Things Done</span>
-                </>
-              ) as any}
+                </Fragment>
+              )}
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
