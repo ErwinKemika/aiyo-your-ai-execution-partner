@@ -95,6 +95,7 @@ export const PhoneMockup = ({ messages = [], typingMessage, showHeader = true, v
               </>
             )}
           </div>
+        </div>
       </motion.div>
     </div>
   );
