@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Languages, Moon, Sun, Sparkles } from "lucide-react";
+import { Menu, X, Languages, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/I18nContext";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -31,9 +31,11 @@ export const Navbar = () => {
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
-            <Sparkles className="w-5 h-5 text-primary-foreground" />
-          </div>
+          <img
+            src="/buddy-avatar.png"
+            alt="Aiyo"
+            className="w-9 h-9 rounded-full object-cover border-2 border-primary/40 group-hover:scale-110 transition-transform"
+          />
           <span className="font-display font-black text-xl tracking-widest text-gradient-primary">AIYO</span>
         </a>
 

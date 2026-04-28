@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Bot } from "lucide-react";
 import { ReactNode } from "react";
 
 interface ChatMessage {
@@ -31,8 +30,8 @@ export const PhoneMockup = ({ messages, typingMessage, showHeader = true }: Phon
           <div className="rounded-[2rem] bg-background overflow-hidden h-[560px] flex flex-col">
             {showHeader && (
               <div className="pt-8 pb-3 px-4 border-b border-border flex items-center gap-3 bg-card/50">
-                <div className="w-9 h-9 rounded-full bg-gradient-primary flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-primary-foreground" />
+                <div className="w-9 h-9 rounded-full overflow-hidden border border-primary/40">
+                  <img src="/buddy-avatar.png" alt="Aiyo" className="w-full h-full object-cover rounded-full" />
                 </div>
                 <div className="flex-1">
                   <div className="font-display font-bold text-sm">AIYO</div>
