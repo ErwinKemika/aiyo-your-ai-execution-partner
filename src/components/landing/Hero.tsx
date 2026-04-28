@@ -1,0 +1,121 @@
+import { motion } from "framer-motion";
+import { ArrowRight, Star, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useI18n } from "@/contexts/I18nContext";
+import { APP_URL } from "@/lib/constants";
+import { PhoneMockup } from "./PhoneMockup";
+
+export const Hero = () => {
+  const { t } = useI18n();
+
+  const heroMessages = [
+    { from: "user" as const, text: t("Bantu aku susun rencana hari ini", "Help me plan my day") },
+    {
+      from: "ai" as const,
+      text: t(
+        "✨ Sudah aku susun:\n• 09:00 Deep work\n• 11:00 Stand-up\n• 14:00 Review desain\n\nReminder aktif. Yuk mulai! 💪",
+        "✨ Done! I planned:\n• 09:00 Deep work\n• 11:00 Stand-up\n• 14:00 Design review\n\nReminders are on. Let's go! 💪"
+      ),
+    },
+  ];
+
+  return (
+    <section className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
+      <div className="absolute inset-0 grid-pattern opacity-50 pointer-events-none" />
+
+      <div className="container relative">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center lg:text-left"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs font-semibold mb-6">
+              <Sparkles className="w-3.5 h-3.5 text-primary" />
+              <span className="text-gradient-primary">
+                {t("AI Produktivitas #1 di Indonesia", "#1 AI Productivity App in Indonesia")}
+              </span>
+            </div>
+
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] mb-6">
+              {t(
+                <>
+                  Teman AI yang
+                  <br />
+                  <span className="text-gradient-accent">Benar-Benar Kerja</span>
+                </>,
+                <>
+                  The AI That
+                  <br />
+                  <span className="text-gradient-accent">Actually Gets Things Done</span>
+                </>
+              ) as any}
+            </h1>
+
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+              {t(
+                "Tugas hilang setelah meeting? Deadline terlupakan? Susah fokus? Aiyo adalah AI companion yang bukan cuma catat — tapi benar-benar bantu kamu eksekusi setiap hari.",
+                "Tasks lost after meetings? Forgotten deadlines? Can't focus? Aiyo is the AI companion that doesn't just note things down — it actually helps you execute every day."
+              )}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 items-center justify-center lg:justify-start mb-6">
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-primary hover:opacity-90 shadow-glow font-semibold text-base h-12 px-7 group"
+              >
+                <a href={APP_URL} target="_blank" rel="noopener">
+                  {t("Mulai Gratis Sekarang", "Start for Free Now")}
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+            </div>
+
+            <p className="text-xs text-muted-foreground mb-8">
+              {t("Tanpa kartu kredit · Gratis selamanya", "No credit card · Free forever")}
+            </p>
+
+            {/* Social proof */}
+            <div className="flex items-center justify-center lg:justify-start gap-4">
+              <div className="flex -space-x-2">
+                {[
+                  "from-purple-500 to-pink-500",
+                  "from-blue-500 to-cyan-500",
+                  "from-amber-500 to-orange-500",
+                  "from-emerald-500 to-teal-500",
+                ].map((g, i) => (
+                  <div
+                    key={i}
+                    className={`w-9 h-9 rounded-full bg-gradient-to-br ${g} border-2 border-background`}
+                  />
+                ))}
+              </div>
+              <div className="text-left">
+                <div className="flex items-center gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <div className="text-xs text-muted-foreground font-medium">
+                  {t("1000+ pengguna aktif", "1000+ active users")}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative"
+          >
+            <PhoneMockup messages={heroMessages} />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
