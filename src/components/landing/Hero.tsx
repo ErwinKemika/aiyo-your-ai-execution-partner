@@ -76,9 +76,18 @@ export const Hero = () => {
               </Button>
             </div>
 
-            <p className="text-xs text-muted-foreground mb-8">
+            <p className="text-xs text-muted-foreground mb-3">
               {t("Tanpa kartu kredit · Gratis selamanya", "No credit card · Free forever")}
             </p>
+
+            <div className="flex justify-center lg:justify-start mb-8">
+              <span className="inline-flex items-center px-3 py-1 rounded-full border border-border/60 text-[11px] text-muted-foreground">
+                {t(
+                  "📱 Bisa diinstall di Android & iOS — langsung dari browser",
+                  "📱 Installable on Android & iOS — straight from your browser"
+                )}
+              </span>
+            </div>
 
             {/* Social proof */}
             <div className="flex items-center justify-center lg:justify-start gap-4">

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Mic, ListChecks, Target, Sparkles, LucideIcon } from "lucide-react";
+import { MessageCircle, Mic, ListChecks, Target, Sparkles, Download, LucideIcon } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 
 interface Feature {
@@ -39,6 +39,14 @@ export const Features = () => {
       icon: Sparkles,
       title: t("Mode Cerdas", "Smart Mode"),
       desc: t("Jawaban lebih pintar dengan AI lanjutan.", "Smarter answers with advanced AI."),
+    },
+    {
+      icon: Download,
+      title: t("Install di HP Tanpa App Store", "Install on Your Phone Without an App Store"),
+      desc: t(
+        "Buka di browser, tap Install — langsung ada di home screen kamu. Gratis, tanpa Play Store atau App Store.",
+        "Open in your browser, tap Install — it lands on your home screen. Free, no Play Store or App Store."
+      ),
     },
   ];
 
