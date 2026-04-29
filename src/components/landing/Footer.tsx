@@ -1,4 +1,3 @@
-import { Sparkles } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 
 export const Footer = () => {
