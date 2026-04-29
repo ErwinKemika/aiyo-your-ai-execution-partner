@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Send, ListChecks } from "lucide-react";
+import { MessageCircle, Send, ListChecks, Mic, Target, BarChart3 } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 import { PhoneMockup } from "./PhoneMockup";
 
@@ -21,6 +21,21 @@ export const LiveDemo = () => {
       icon: ListChecks,
       title: t("Task Otomatis", "Auto Tasks"),
       desc: t("Aiyo capture & susun task tanpa ribet.", "Aiyo captures & organizes tasks effortlessly."),
+    },
+    {
+      icon: Mic,
+      title: t("Mode Ngobrol", "Voice Mode"),
+      desc: t("Ngobrol hands-free langsung pakai suara.", "Talk hands-free using just your voice."),
+    },
+    {
+      icon: Target,
+      title: t("Mode Fokus", "Focus Mode"),
+      desc: t("Timer deep work biar makin produktif.", "Deep work timer to boost productivity."),
+    },
+    {
+      icon: BarChart3,
+      title: t("Analytics & XP", "Analytics & XP"),
+      desc: t("Pantau progress harian dan level kamu.", "Track daily progress and your level."),
     },
   ];
 
