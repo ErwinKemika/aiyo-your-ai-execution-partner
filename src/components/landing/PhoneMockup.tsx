@@ -37,7 +37,7 @@ export const PhoneMockup = ({ messages = [], typingMessage, showHeader = true, v
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-black"
               />
             ) : (
               <>
