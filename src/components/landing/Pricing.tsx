@@ -124,15 +124,23 @@ export const Pricing = () => {
 
               <ul className="space-y-3 mb-7 flex-1">
                 {p.features.map((f, j) => (
-                  <li key={j} className="flex items-start gap-2.5 text-sm">
+                  <li key={j} className={`flex items-start gap-2.5 text-sm ${!f.included ? "text-muted-foreground/70" : ""}`}>
                     <div
                       className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 ${
-                        p.highlight ? "bg-gradient-primary" : "bg-primary/15"
+                        !f.included
+                          ? "bg-muted-foreground/15"
+                          : p.highlight
+                            ? "bg-gradient-primary"
+                            : "bg-primary/15"
                       }`}
                     >
-                      <Check className={`w-3 h-3 ${p.highlight ? "text-primary-foreground" : "text-primary"}`} />
+                      {f.included ? (
+                        <Check className={`w-3 h-3 ${p.highlight ? "text-primary-foreground" : "text-primary"}`} />
+                      ) : (
+                        <X className="w-3 h-3 text-muted-foreground" />
+                      )}
                     </div>
-                    <span>{f}</span>
+                    <span className={!f.included ? "line-through" : ""}>{f.text}</span>
                   </li>
                 ))}
               </ul>
