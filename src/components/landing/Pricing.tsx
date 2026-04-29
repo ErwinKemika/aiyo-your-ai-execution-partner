@@ -168,7 +168,8 @@ export const Pricing = () => {
                 </a>
               </Button>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
