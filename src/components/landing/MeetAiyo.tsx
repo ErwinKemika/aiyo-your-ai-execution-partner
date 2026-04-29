@@ -5,11 +5,8 @@ import { useI18n } from "@/contexts/I18nContext";
 export const MeetAiyo = () => {
   const { t } = useI18n();
 
-  const badges = [
-    "🤖 AI Companion",
-    "⚡ Instant Action",
-    "🇮🇩 Made for Indonesia",
-  ];
+
+
 
   const cards = [
     {
