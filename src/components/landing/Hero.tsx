@@ -89,32 +89,12 @@ export const Hero = () => {
               </span>
             </div>
 
-            {/* Social proof */}
-            <div className="flex items-center justify-center lg:justify-start gap-4">
-              <div className="flex -space-x-2">
-                {[
-                  "from-purple-500 to-pink-500",
-                  "from-blue-500 to-cyan-500",
-                  "from-amber-500 to-orange-500",
-                  "from-emerald-500 to-teal-500",
-                ].map((g, i) => (
-                  <div
-                    key={i}
-                    className={`w-9 h-9 rounded-full bg-gradient-to-br ${g} border-2 border-background`}
-                  />
-                ))}
-              </div>
-              <div className="text-left">
-                <div className="flex items-center gap-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <div className="text-xs text-muted-foreground font-medium">
-                  {t("1000+ pengguna aktif", "1000+ active users")}
-                </div>
-              </div>
-            </div>
+            <p className="text-xs text-muted-foreground text-center lg:text-left">
+              {t(
+                "✨ Coba trial untuk merasakan semua fitur unggulan.",
+                "✨ Try the trial to experience all premium features."
+              )}
+            </p>
           </motion.div>
 
           <motion.div
