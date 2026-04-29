@@ -36,7 +36,10 @@ export const Navbar = () => {
             alt="Aiyo"
             className="w-9 h-9 rounded-full object-cover border-2 border-primary/40 group-hover:scale-110 transition-transform"
           />
-          <span className="font-display font-black text-xl tracking-widest text-gradient-primary">AIYO</span>
+          <div className="flex flex-col leading-none">
+            <span className="font-display font-black text-xl tracking-widest text-gradient-primary">AIYO</span>
+            <span className="text-[9px] md:text-[10px] text-muted-foreground tracking-wide mt-0.5">Always In Your Orbit</span>
+          </div>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
