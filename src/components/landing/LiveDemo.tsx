@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Send, ListChecks } from "lucide-react";
+import { MessageCircle, Send, ListChecks, Mic, Target, BarChart3 } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 import { PhoneMockup } from "./PhoneMockup";
 
@@ -21,6 +21,21 @@ export const LiveDemo = () => {
       icon: ListChecks,
       title: t("Task Otomatis", "Auto Tasks"),
       desc: t("Aiyo capture & susun task tanpa ribet.", "Aiyo captures & organizes tasks effortlessly."),
+    },
+    {
+      icon: Mic,
+      title: t("Mode Ngobrol", "Voice Mode"),
+      desc: t("Ngobrol hands-free langsung pakai suara.", "Talk hands-free using just your voice."),
+    },
+    {
+      icon: Target,
+      title: t("Mode Fokus", "Focus Mode"),
+      desc: t("Timer deep work biar makin produktif.", "Deep work timer to boost productivity."),
+    },
+    {
+      icon: BarChart3,
+      title: t("Analytics & XP", "Analytics & XP"),
+      desc: t("Pantau progress harian dan level kamu.", "Track daily progress and your level."),
     },
   ];
 
@@ -47,22 +62,22 @@ export const LiveDemo = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <PhoneMockup videoSrc="/aiyo-demo.mp4" />
 
-          <div className="space-y-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             {highlights.map((h, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.15 }}
+                transition={{ delay: i * 0.1 }}
                 className="glass rounded-2xl p-5 flex gap-4 items-start hover:border-primary/40 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center shrink-0 shadow-glow">
+                <div className="w-11 h-11 rounded-xl bg-gradient-primary flex items-center justify-center shrink-0 shadow-glow">
                   <h.icon className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="font-display font-bold text-lg mb-1">{h.title}</div>
-                  <div className="text-sm text-muted-foreground">{h.desc}</div>
+                  <div className="font-display font-bold text-base mb-1">{h.title}</div>
+                  <div className="text-xs text-muted-foreground leading-relaxed">{h.desc}</div>
                 </div>
               </motion.div>
             ))}
