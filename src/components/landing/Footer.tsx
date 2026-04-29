@@ -21,7 +21,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-border text-xs text-muted-foreground">
-          <p>© 2025 Aiyo. {t("Semua hak dilindungi.", "All rights reserved.")}</p>
+          <p>© 2026 Aiyo. {t("Semua hak dilindungi.", "All rights reserved.")}</p>
         </div>
       </div>
     </footer>
