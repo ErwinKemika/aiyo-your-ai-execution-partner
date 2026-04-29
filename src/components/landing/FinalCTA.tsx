@@ -44,7 +44,7 @@ export const FinalCTA = () => {
               className="bg-gradient-primary hover:opacity-90 shadow-glow font-semibold text-base h-14 px-8 group animate-glow-pulse"
             >
               <a href={APP_URL} target="_blank" rel="noopener">
-                {t("Mulai Gratis Sekarang", "Start for Free Now")}
+                {t("Coba Gratis — Semua Fitur Aktif", "Try Free — All Features Active")}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

@@ -70,7 +70,7 @@ export const Hero = () => {
                 className="bg-gradient-primary hover:opacity-90 shadow-glow font-semibold text-base h-12 px-7 group"
               >
                 <a href={APP_URL} target="_blank" rel="noopener">
-                  {t("Mulai Gratis Sekarang", "Start for Free Now")}
+                  {t("Coba Gratis — Semua Fitur Aktif", "Try Free — All Features Active")}
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
