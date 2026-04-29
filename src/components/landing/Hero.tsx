@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/I18nContext";
 import { Fragment } from "react";
 import { APP_URL } from "@/lib/constants";
-import { PhoneMockup } from "./PhoneMockup";
+import heroImage from "@/assets/aiyo-launch.png";
 
 export const Hero = () => {
   const { t, lang } = useI18n();
@@ -112,9 +112,13 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-center"
           >
-            <PhoneMockup messages={heroMessages} />
+            <img
+              src={heroImage}
+              alt={t("Aiyo - Teman AI Produktivitas", "Aiyo - AI Productivity Companion")}
+              className="w-full max-w-md lg:max-w-lg h-auto drop-shadow-[0_20px_60px_hsl(var(--primary)/0.35)]"
+            />
           </motion.div>
         </div>
       </div>
