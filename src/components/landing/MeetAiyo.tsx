@@ -5,11 +5,8 @@ import { useI18n } from "@/contexts/I18nContext";
 export const MeetAiyo = () => {
   const { t } = useI18n();
 
-  const badges = [
-    "🤖 AI Companion",
-    "⚡ Instant Action",
-    "🇮🇩 Made for Indonesia",
-  ];
+
+
 
   const cards = [
     {
@@ -90,24 +87,6 @@ export const MeetAiyo = () => {
             "Not just a chatbot. Aiyo is an AI companion that actually works — captures tasks, sends reminders, helps you focus, every day."
           )}
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex gap-3 flex-wrap justify-center"
-        >
-          {badges.map((b) => (
-            <span
-              key={b}
-              className="px-4 py-1.5 rounded-full glass text-sm font-semibold border border-primary/30 text-gradient-primary"
-            >
-              {b}
-            </span>
-          ))}
-        </motion.div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 w-full max-w-5xl">
           {cards.map((card, i) => {
             const Icon = card.icon;
