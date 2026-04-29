@@ -4,6 +4,7 @@ import { MeetAiyo } from "@/components/landing/MeetAiyo";
 import { LiveDemo } from "@/components/landing/LiveDemo";
 import { PainPoints } from "@/components/landing/PainPoints";
 import { Features } from "@/components/landing/Features";
+import { ForWho } from "@/components/landing/ForWho";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Pricing } from "@/components/landing/Pricing";
 import { FinalCTA } from "@/components/landing/FinalCTA";
@@ -24,6 +25,7 @@ const Index = () => {
             <PainPoints />
             <Features />
             <HowItWorks />
+            <ForWho />
             <Pricing />
             <FinalCTA />
           </main>
