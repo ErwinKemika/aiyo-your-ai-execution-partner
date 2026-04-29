@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Clock, Brain, Zap } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 
 export const MeetAiyo = () => {
@@ -8,6 +9,45 @@ export const MeetAiyo = () => {
     "🤖 AI Companion",
     "⚡ Instant Action",
     "🇮🇩 Made for Indonesia",
+  ];
+
+  const cards = [
+    {
+      icon: Clock,
+      color: "purple",
+      iconClass: "text-purple-400",
+      glowClass: "bg-purple-500/30",
+      borderClass: "border-purple-500/30",
+      title: t("Selalu Ada, 24/7", "Always There, 24/7"),
+      description: t(
+        "Tengah malam mau capture ide atau panik deadline? Aiyo tidak pernah offline.",
+        "Midnight idea capture or deadline panic? Aiyo is never offline."
+      ),
+    },
+    {
+      icon: Brain,
+      color: "cyan",
+      iconClass: "text-cyan-400",
+      glowClass: "bg-cyan-500/30",
+      borderClass: "border-cyan-500/30",
+      title: t("Makin Kenal, Makin Pintar", "Knows You Better Over Time"),
+      description: t(
+        "Semakin sering dipakai, Aiyo makin paham gaya kerja dan kebiasaanmu.",
+        "The more you use it, the better Aiyo understands your work style and habits."
+      ),
+    },
+    {
+      icon: Zap,
+      color: "orange",
+      iconClass: "text-orange-400",
+      glowClass: "bg-orange-500/30",
+      borderClass: "border-orange-500/30",
+      title: t("Bukan Sekadar Catat", "Not Just Note-Taking"),
+      description: t(
+        "Aiyo tidak hanya dengar — dia eksekusi. Tugas, reminder, fokus, semua diurus.",
+        "Aiyo doesn't just listen — it executes. Tasks, reminders, focus, all handled."
+      ),
+    },
   ];
 
   return (
@@ -67,6 +107,35 @@ export const MeetAiyo = () => {
             </span>
           ))}
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 w-full max-w-5xl">
+          {cards.map((card, i) => {
+            const Icon = card.icon;
+            return (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 * i }}
+                className={`relative glass bg-card/50 border ${card.borderClass} rounded-2xl p-6 text-left hover:scale-[1.02] transition-transform`}
+              >
+                <div className="relative mb-4 inline-flex">
+                  <div className={`absolute inset-0 ${card.glowClass} blur-2xl rounded-full`} />
+                  <div className={`relative w-12 h-12 rounded-xl flex items-center justify-center bg-card border ${card.borderClass}`}>
+                    <Icon className={`w-6 h-6 ${card.iconClass}`} />
+                  </div>
+                </div>
+                <h3 className="font-display font-bold text-lg mb-2 text-foreground">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {card.description}
+                </p>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
