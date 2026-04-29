@@ -91,17 +91,26 @@ export const Pricing = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {plans.map((p, i) => (
+          {plans.map((p, i) => {
+            const isMax = p.name === "Aiyo Max";
+            return (
             <motion.div
               key={p.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
+              style={
+                isMax
+                  ? { boxShadow: "0 0 30px rgba(249, 115, 22, 0.25), 0 0 60px rgba(249, 115, 22, 0.1)" }
+                  : undefined
+              }
               className={`relative rounded-3xl p-7 flex flex-col ${
                 p.highlight
                   ? "bg-gradient-to-br from-primary/15 via-card to-accent/10 border-2 border-primary/50 shadow-glow lg:scale-105 lg:-translate-y-2"
-                  : "glass hover:border-primary/40"
+                  : isMax
+                    ? "glass border-2 border-orange-500/50 bg-orange-500/5 hover:border-orange-500/70"
+                    : "glass hover:border-primary/40"
               } transition-all`}
             >
               {p.badge && (
@@ -159,7 +168,8 @@ export const Pricing = () => {
                 </a>
               </Button>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
