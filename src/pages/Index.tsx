@@ -24,8 +24,8 @@ const Index = () => {
             <LiveDemo />
             <PainPoints />
             <Features />
-            <HowItWorks />
             <ForWho />
+            <HowItWorks />
             <Pricing />
             <FinalCTA />
           </main>
