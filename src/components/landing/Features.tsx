@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageSquare, Bell, CheckSquare, Timer, Trophy, Shield, LucideIcon } from "lucide-react";
+import { MessageCircle, Mic, ListChecks, Target, Sparkles, LucideIcon } from "lucide-react";
 import { useI18n } from "@/contexts/I18nContext";
 
 interface Feature {
@@ -13,52 +13,32 @@ export const Features = () => {
 
   const features: Feature[] = [
     {
-      icon: MessageSquare,
-      title: t("Chat AI Actionable", "Actionable AI Chat"),
+      icon: MessageCircle,
+      title: t("Chat AI", "AI Chat"),
+      desc: t("Ngobrol dan curhat bebas kapan saja.", "Chat and vent freely anytime."),
+    },
+    {
+      icon: Mic,
+      title: t("Mode Ngobrol", "Voice Mode"),
       desc: t(
-        "Ngobrol natural, Aiyo langsung buatkan task dan reminder. Bukan Q&A biasa.",
-        "Chat naturally — Aiyo creates tasks and reminders instantly. Not your typical Q&A."
+        "Bicara langsung ke Aiyo dengan suara, hands-free.",
+        "Talk to Aiyo with your voice, hands-free."
       ),
     },
     {
-      icon: Bell,
-      title: t("Reminder Telegram + Push", "Telegram + Push Reminders"),
-      desc: t(
-        "Reminder dikirim via notifikasi push DAN Telegram. Susah kelewatan.",
-        "Reminders delivered via push AND Telegram. Impossible to miss."
-      ),
+      icon: ListChecks,
+      title: t("To-Do & Kegiatan", "To-Do & Activities"),
+      desc: t("Event, reminder, dan jadwal harian.", "Events, reminders, and daily schedule."),
     },
     {
-      icon: CheckSquare,
-      title: t("Manajemen Tugas Cepat", "Lightning-Fast Task Management"),
-      desc: t(
-        "Capture tugas dalam hitungan detik dari chat. Auto-prioritas.",
-        "Capture tasks in seconds from chat. Auto-prioritized."
-      ),
+      icon: Target,
+      title: t("Mode Fokus", "Focus Mode"),
+      desc: t("Timer produktivitas untuk deep work.", "Productivity timer for deep work."),
     },
     {
-      icon: Timer,
-      title: t("Focus Mode", "Focus Mode"),
-      desc: t(
-        "Mode fokus dengan timer terintegrasi. Kurangi distraksi, tingkatkan output.",
-        "Focus mode with integrated timer. Cut distractions, boost output."
-      ),
-    },
-    {
-      icon: Trophy,
-      title: t("Streak & Pencapaian", "Streaks & Achievements"),
-      desc: t(
-        "Streak harian, XP mingguan, dan badge. Produktif terasa lebih rewarding.",
-        "Daily streaks, weekly XP, and badges. Productivity feels rewarding."
-      ),
-    },
-    {
-      icon: Shield,
-      title: t("Privasi Terjaga", "Privacy First"),
-      desc: t(
-        "Data kamu aman. Enkripsi end-to-end, tidak dijual ke pihak ketiga.",
-        "Your data is safe. End-to-end encryption, never sold to third parties."
-      ),
+      icon: Sparkles,
+      title: t("Mode Cerdas", "Smart Mode"),
+      desc: t("Jawaban lebih pintar dengan AI lanjutan.", "Smarter answers with advanced AI."),
     },
   ];
 
