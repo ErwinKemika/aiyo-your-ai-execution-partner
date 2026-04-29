@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Star } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/I18nContext";
 import { APP_URL } from "@/lib/constants";
