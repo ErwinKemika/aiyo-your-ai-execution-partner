@@ -89,12 +89,14 @@ export const Hero = () => {
               </span>
             </div>
 
-            <p className="text-xs text-muted-foreground text-center lg:text-left">
-              {t(
-                "✨ Coba trial untuk merasakan semua fitur unggulan.",
-                "✨ Try the trial to experience all premium features."
-              )}
-            </p>
+            <div className="flex justify-center lg:justify-start">
+              <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs font-semibold shadow-[0_0_12px_rgba(124,58,237,0.3)]">
+                {t(
+                  "✨ Coba trial untuk merasakan semua fitur unggulan.",
+                  "✨ Try the trial to experience all premium features."
+                )}
+              </span>
+            </div>
           </motion.div>
 
           <motion.div
