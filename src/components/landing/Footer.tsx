@@ -4,13 +4,6 @@ import { useI18n } from "@/contexts/I18nContext";
 export const Footer = () => {
   const { t } = useI18n();
 
-  const links = [
-    { label: t("Tentang Kami", "About Us"), href: "#" },
-    { label: "Blog", href: "#" },
-    { label: t("Privasi", "Privacy"), href: "#" },
-    { label: t("Syarat", "Terms"), href: "#" },
-  ];
-
   return (
     <footer className="border-t border-border bg-card/40 py-12">
       <div className="container">
@@ -29,23 +22,10 @@ export const Footer = () => {
               )}
             </p>
           </div>
-
-          <nav className="flex flex-wrap gap-6">
-            {links.map((l) => (
-              <a
-                key={l.label}
-                href={l.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {l.label}
-              </a>
-            ))}
-          </nav>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row gap-3 justify-between items-center text-xs text-muted-foreground">
+        <div className="mt-10 pt-6 border-t border-border text-xs text-muted-foreground">
           <p>© 2025 Aiyo. {t("Semua hak dilindungi.", "All rights reserved.")}</p>
-          <p>{t("Dibuat dengan ❤️ di Indonesia", "Made with ❤️ in Indonesia")}</p>
         </div>
       </div>
     </footer>
