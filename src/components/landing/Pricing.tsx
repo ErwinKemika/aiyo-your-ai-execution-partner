@@ -160,7 +160,9 @@ export const Pricing = () => {
                 className={`w-full font-semibold ${
                   p.highlight
                     ? "bg-gradient-primary hover:opacity-90 shadow-glow"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                    : isMax
+                      ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:opacity-90 shadow-[0_0_20px_rgba(249,115,22,0.4)]"
+                      : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 }`}
               >
                 <a href={APP_URL} target="_blank" rel="noopener">
