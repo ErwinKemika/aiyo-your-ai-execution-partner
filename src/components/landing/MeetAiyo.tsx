@@ -107,6 +107,35 @@ export const MeetAiyo = () => {
             </span>
           ))}
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 w-full max-w-5xl">
+          {cards.map((card, i) => {
+            const Icon = card.icon;
+            return (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 * i }}
+                className={`relative glass bg-card/50 border ${card.borderClass} rounded-2xl p-6 text-left hover:scale-[1.02] transition-transform`}
+              >
+                <div className="relative mb-4 inline-flex">
+                  <div className={`absolute inset-0 ${card.glowClass} blur-2xl rounded-full`} />
+                  <div className={`relative w-12 h-12 rounded-xl flex items-center justify-center bg-card border ${card.borderClass}`}>
+                    <Icon className={`w-6 h-6 ${card.iconClass}`} />
+                  </div>
+                </div>
+                <h3 className="font-display font-bold text-lg mb-2 text-foreground">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {card.description}
+                </p>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
