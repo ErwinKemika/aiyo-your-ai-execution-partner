@@ -114,10 +114,12 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex justify-center"
           >
-            <img
+            <motion.img
               src={heroImage}
               alt={t("Aiyo - Teman AI Produktivitas", "Aiyo - AI Productivity Companion")}
               className="w-full max-w-md lg:max-w-lg h-auto drop-shadow-[0_20px_60px_hsl(var(--primary)/0.35)]"
+              animate={{ y: [0, -14, 0], rotate: [0, 0.6, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             />
           </motion.div>
         </div>
