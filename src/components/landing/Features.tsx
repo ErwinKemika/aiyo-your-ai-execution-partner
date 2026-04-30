@@ -44,7 +44,7 @@ export const Features = () => {
       icon: Download,
       title: t("Install di HP Tanpa App Store", "Install on Your Phone Without an App Store"),
       desc: t(
-        "Buka di browser, tap Install — langsung ada di home screen kamu. Gratis, tanpa Play Store atau App Store.",
+        "Buka di browser, tap Install langsung ada di home screen kamu. Gratis, tanpa Play Store atau App Store.",
         "Open in your browser, tap Install — it lands on your home screen. Free, no Play Store or App Store."
       ),
     },
