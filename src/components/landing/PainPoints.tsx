@@ -7,8 +7,8 @@ export const PainPoints = () => {
 
   const items = [
     {
-      pain: t("Tugas hilang setelah meeting", "Tasks lost after meetings"),
-      solution: t("Aiyo capture otomatis jadi task", "Aiyo auto-captures them as tasks"),
+      pain: t("Bingung mulai dari mana, mau brainstorming sendirian susah", "Don't know where to start, brainstorming alone is hard"),
+      solution: t("Chat sama Aiyo brainstorming, tanya, curhat, semua bisa", "Chat with Aiyo—brainstorm, ask, or just vent, you can do it all"),
     },
     {
       pain: t("Reminder diabaikan, deadline terlewat", "Reminders ignored, deadlines missed"),
