@@ -83,8 +83,8 @@ export const MeetAiyo = () => {
           className="text-muted-foreground max-w-md mx-auto mb-8"
         >
           {t(
-            "Bukan sekadar chatbot. Aiyo adalah AI companion yang beneran kerja — capture tugas, kirim reminder, bantu fokus, setiap hari.",
-            "Not just a chatbot. Aiyo is an AI companion that actually works — captures tasks, sends reminders, helps you focus, every day."
+            "Bukan sekadar chatbot. Aiyo adalah AI companion yang beneran kerja capture tugas, kirim reminder, bantu fokus, setiap hari.",
+            "Not just a chatbot. Aiyo is an AI companion that actually works capture tasks, sends reminders, helps you focus, every day."
           )}
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 w-full max-w-5xl">
