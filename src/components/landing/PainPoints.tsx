@@ -30,8 +30,8 @@ export const PainPoints = () => {
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
             {t(
-              "Masalah produktivitas yang nyata — dan solusi yang nyata juga.",
-              "Real productivity problems — and real solutions."
+              "Masalah produktivitas dan solusi yang nyata",
+              "Real productivity problems and real solutions."
             )}
           </p>
         </div>
