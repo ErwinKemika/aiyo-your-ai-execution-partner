@@ -21,8 +21,8 @@ export const ForWho = () => {
       title: t("Profesional Muda", "Young Professionals"),
       subtitle: t("Kerja padat, banyak meeting", "Packed schedule, lots of meetings"),
       desc: t(
-        "Tugas hilang setelah rapat? Deadline terlupakan? Aiyo bantu kamu capture, susun, dan eksekusi — otomatis.",
-        "Tasks lost after meetings? Deadlines forgotten? Aiyo helps you capture, organize, and execute — automatically."
+        "Tugas hilang setelah rapat? Deadline terlupakan? Aiyo bantu kamu capture, susun, dan eksekusi otomatis.",
+        "Tasks lost after meetings? Deadlines forgotten? Aiyo helps you capture, organize, and execute automatically."
       ),
       glow: "rgba(168, 85, 247, 0.35)",
       iconBg: "from-purple-500 to-purple-700",
@@ -48,8 +48,8 @@ export const ForWho = () => {
         "Hard to start, easy to forget, need instant motivation"
       ),
       desc: t(
-        "Aiyo dirancang untuk kamu yang butuh reminder yang benar-benar nemenin, streak yang memotivasi, dan AI yang sabar — setiap hari.",
-        "Aiyo is built for you who need reminders that truly accompany you, motivating streaks, and a patient AI — every day."
+        "Aiyo dirancang untuk kamu yang butuh reminder yang benar-benar nemenin, streak yang memotivasi, dan AI yang sabar setiap hari.",
+        "Aiyo is built for you who need reminders that truly accompany you, motivating streaks, and a patient AI every day."
       ),
       glow: "rgba(249, 115, 22, 0.35)",
       iconBg: "from-orange-500 to-orange-700",
