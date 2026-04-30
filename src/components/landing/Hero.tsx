@@ -58,8 +58,8 @@ export const Hero = () => {
 
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed whitespace-pre-line">
               {t(
-                "Tugas hilang? Deadline terlewat? Susah fokus? Aiyo bukan cuma catat — dia juga bisa diajak brainstorming, bantu kerjaan, sampai jadi tempat curhat. \"Real talk, real help\".\n\n",
-                "Tasks lost? Deadlines missed? Hard to focus? Aiyo doesn't just take notes — it can brainstorm, help with work, and even be a place to vent. \"Real talk, real help\".\n\n"
+                "Tugas hilang? Deadline terlewat? Susah fokus? Aiyo bukan cuma catat dia juga bisa diajak brainstorming, bantu kerjaan, sampai jadi tempat curhat. \"Real talk, real help\".\n\n",
+                "Tasks lost? Deadlines missed? Hard to focus? Aiyo doesn't just take notes it can brainstorm, help with work, and even be a place to vent. \"Real talk, real help\".\n\n"
               )}
             </p>
 
