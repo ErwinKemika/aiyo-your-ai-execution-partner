@@ -71,8 +71,8 @@ export const ForWho = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg">
             {t(
-              "Siapapun yang butuh teman AI yang benar-benar bantu eksekusi — bukan sekadar catat.",
-              "Anyone who needs an AI companion that truly helps you execute — not just take notes."
+              "Memberikan solusi untuk kamu yang sibuk, gampang lupa, atau butuh teman mikir bareng setiap hari",
+              "Providing solutions for those who are busy, easily forget, or need a thinking partner every day"
             )}
           </p>
         </div>
