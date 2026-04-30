@@ -48,8 +48,8 @@ export const ForWho = () => {
         "Hard to start, easy to forget, need instant motivation"
       ),
       desc: t(
-        "Aiyo dirancang untuk kamu yang butuh reminder yang benar-benar nemenin, streak yang memotivasi, dan AI yang sabar — setiap hari.",
-        "Aiyo is built for you who need reminders that truly accompany you, motivating streaks, and a patient AI — every day."
+        "Aiyo dirancang untuk kamu yang butuh reminder yang benar-benar nemenin, streak yang memotivasi, dan AI yang sabar setiap hari.",
+        "Aiyo is built for you who need reminders that truly accompany you, motivating streaks, and a patient AI every day."
       ),
       glow: "rgba(249, 115, 22, 0.35)",
       iconBg: "from-orange-500 to-orange-700",
