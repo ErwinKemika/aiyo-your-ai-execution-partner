@@ -41,8 +41,8 @@ export const MeetAiyo = () => {
       borderClass: "border-orange-500/30",
       title: t("Bukan Sekadar Catat", "Not Just Note-Taking"),
       description: t(
-        "Aiyo tidak hanya dengar — dia eksekusi. Tugas, reminder, fokus, semua diurus.",
-        "Aiyo doesn't just listen — it executes. Tasks, reminders, focus, all handled."
+        "Aiyo tidak hanya dengar dia eksekusi. Tugas, reminder, fokus, semua diurus.",
+        "Aiyo doesn't just listen he executes. Tasks, reminders, focus, all handled."
       ),
     },
   ];
