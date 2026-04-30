@@ -45,21 +45,21 @@ export const Hero = () => {
                 <Fragment>
                   Teman AI yang
                   <br />
-                  <span className="text-gradient-accent">Benar-Benar Kerja</span>
+                  <span className="text-gradient-accent">Kamu Butuhin</span>
                 </Fragment>
               ) : (
                 <Fragment>
-                  The AI That
+                  The AI
                   <br />
-                  <span className="text-gradient-accent">Actually Gets Things Done</span>
+                  <span className="text-gradient-accent">You Actually Need</span>
                 </Fragment>
               )}
             </h1>
 
-            <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed whitespace-pre-line">
               {t(
-                "Tugas hilang setelah meeting? Deadline terlupakan? Susah fokus? Aiyo adalah AI companion yang bukan cuma catat — tapi benar-benar bantu kamu eksekusi setiap hari.",
-                "Tasks lost after meetings? Forgotten deadlines? Can't focus? Aiyo is the AI companion that doesn't just note things down — it actually helps you execute every day."
+                "Tugas hilang? Deadline terlewat? Susah fokus? Aiyo bukan cuma catat — dia juga bisa diajak brainstorming, bantu kerjaan, sampai jadi tempat curhat. \"Real talk, real help\".\n\n",
+                "Tasks lost? Deadlines missed? Hard to focus? Aiyo doesn't just take notes — it can brainstorm, help with work, and even be a place to vent. \"Real talk, real help\".\n\n"
               )}
             </p>
 
