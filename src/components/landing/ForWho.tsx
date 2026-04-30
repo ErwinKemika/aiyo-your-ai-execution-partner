@@ -21,8 +21,8 @@ export const ForWho = () => {
       title: t("Profesional Muda", "Young Professionals"),
       subtitle: t("Kerja padat, banyak meeting", "Packed schedule, lots of meetings"),
       desc: t(
-        "Tugas hilang setelah rapat? Deadline terlupakan? Aiyo bantu kamu capture, susun, dan eksekusi — otomatis.",
-        "Tasks lost after meetings? Deadlines forgotten? Aiyo helps you capture, organize, and execute — automatically."
+        "Tugas hilang setelah rapat? Deadline terlupakan? Aiyo bantu kamu capture, susun, dan eksekusi otomatis.",
+        "Tasks lost after meetings? Deadlines forgotten? Aiyo helps you capture, organize, and execute automatically."
       ),
       glow: "rgba(168, 85, 247, 0.35)",
       iconBg: "from-purple-500 to-purple-700",
