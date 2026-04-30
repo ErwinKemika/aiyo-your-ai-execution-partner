@@ -26,9 +26,9 @@ export const FinalCTA = () => {
             </div>
 
             <h2 className="font-display font-black text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-              {t("Berhenti Catat,", "Stop Noting,")}
+              {t("Temen AI", "AI Friend")}
               <br />
-              <span className="text-gradient-accent">{t("Mulai Eksekusi", "Start Executing")}</span>
+              <span className="text-gradient-accent">{t("Yang Kamu Butuhin", "That You Need")}</span>
             </h2>
 
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
