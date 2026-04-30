@@ -33,8 +33,8 @@ export const FinalCTA = () => {
 
             <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
               {t(
-                "Bergabung dengan ribuan pengguna yang sudah produktif bersama Aiyo.",
-                "Join thousands of users already getting things done with Aiyo."
+                "Rasakan kemanfaatkan Aiyo dalam menemani keseharian untuk lebih produktif!",
+                "Experience the benefits of Aiyo in accompanying your daily life to be more productive!"
               )}
             </p>
 
